@@ -51,7 +51,8 @@ Commands Overview:
 
 ## 2) Install GNU Radio from conda-forge
 - conda install gnuradio
-If you want a specific version of the gnuradio package
+  
+### If you want a specific version of the gnuradio package
 - conda install gnuradio=3.8
 
 To upgrade all non-Python packages in your environment to their latest available versions, use the upgrade command
@@ -61,8 +62,11 @@ To upgrade all non-Python packages in your environment to their latest available
 - conda install -c conda-forge jupyterlab
 
 # Using GNU Radio from conda
-- conda run uhd_find_devices
 - python ./anaconda3/envs/gnuradio/lib/uhd/utils/uhd_images_downloader.py
+- conda run uhd_find_devices
   
 Access the Anaconda tools and locate the GNU Radio virtual environment. Activate the environment and ensure that GNU Radio and JupyterLab function correctly with the GNU Radio libraries.  
 - anaconda-navigator
+  
+If you open another terminal and run Anaconda-navigator you should see this.
+![Anaconda with gnuradio](https://github.com/DGoezSanchez/gnuradio-projects/blob/main/Figures/anaconda_gnuradio.png)
